@@ -31,7 +31,7 @@ namespace QueueProgram
                 }
                 temp.next = node;               
             }
-            Console.WriteLine("Element {0} is Added in Queue", node.data);
+            //Console.WriteLine("Element {0} is Added in Queue", node.data);
         }
         /// <summary>
         /// Dequeue() to empty the queue
