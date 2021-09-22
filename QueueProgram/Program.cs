@@ -12,6 +12,7 @@ namespace QueueProgram
             queue.Enqueue(30);
             queue.Enqueue(70);
             queue.Print();
+            queue.Dequeue();
         }
     }
 }

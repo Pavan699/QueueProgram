@@ -21,7 +21,6 @@ namespace QueueProgram
             if(head == null)
             {
                 head = node;
-                Console.WriteLine("Element {0} is Added in Queue", node.data);
             }
             else
             {
@@ -30,10 +29,29 @@ namespace QueueProgram
                 {
                     temp = temp.next;
                 }
-                temp.next = node;
-                Console.WriteLine("Element {0} is Added in Queue",node.data);
+                temp.next = node;               
+            }
+            Console.WriteLine("Element {0} is Added in Queue", node.data);
+        }
+        /// <summary>
+        /// Dequeue() to empty the queue
+        /// </summary>
+        public void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                while(head != null)
+                {
+                    Console.WriteLine("Element " + head.data + " Dequeued ");
+                    head = head.next;
+                }
             }
         }
+
         /// <summary>
         /// Print() method to print the Queue
         /// </summary>
